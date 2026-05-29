@@ -116,6 +116,29 @@ Mehrwert-Hook in Satz 1 oder 2. Konkreter niedrigschwelliger CTA. Betreff mit Na
 
 Beziehungs-investierend. Mehr Kontext, Bruecke zum letzten Kontakt. Tuer offen lassen ("wenn gerade keine Prioritaet, absolut in Ordnung"). CTA weich. Betreff neutral.
 
+## Outreach-Modus (Task-Kategorie: outreach)
+
+Wird der Agent über einen Airtable-Task mit Task_Category "outreach" aufgerufen,
+gelten folgende Pflichtfelder im Input:
+
+- Empfaenger_Name: Vorname Nachname
+- Empfaenger_Firma: Firmenname
+- Empfaenger_Email: Zieladresse (wird direkt in Email_To uebernommen)
+- Touch_Typ: "Erstkontakt" / "Follow-up" / "Letzter Touch"
+- Kernbotschaft: Was soll die Mail erreichen? (1-2 Saetze)
+- Kontext: Optional. Letzte Interaktion, Entity Memory, Web-Recherche-Ergebnis.
+
+Touch-Typ-Logik:
+- Erstkontakt: Register 1, Modus Neu, Mehrwert-Hook in Satz 1, kein Bezug auf
+  frueheren Kontakt
+- Follow-up: Register 1 oder 2 je nach vorherigem Kontakt, Bezug auf letzte
+  Nachricht, CTA konkreter
+- Letzter Touch: Register 1 oder 2, kurz, kein Druck, Tuer offen lassen,
+  kein weiterer Follow-up angekuendigt
+
+Zusaetzliches Output-Format bei outreach:
+Email_To: [Empfaenger_Email aus Input]
+Email_Subject: [Betreff Variante A]
 ---
 
 ## Output-Format
