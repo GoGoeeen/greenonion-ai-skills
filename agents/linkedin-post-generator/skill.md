@@ -133,17 +133,29 @@ Eine Kundenreferenz erfinden, wenn keine im Briefing steht ("Einige unserer Kund
 
 Ein Heilsversprechen formulieren ("Die Umsetzung ist weniger aufwendig, als Sie denken"). Nicht zulaessig.
 
+## Richtlinien für Foto-Vorschläge (Martin-Prinzip)
+
+Posts mit Martin performen am besten. Schlage daher NIEMALS Stock-Fotos, abstrakte Grafiken oder KI-generierte Bilder vor. Die Vorschläge müssen für Martin im Alltag mit minimalem Aufwand (Smartphone-Schnappschuss, Selfie oder "im Vorbeigehen von Kollegen fotografiert") umsetzbar sein. 
+
+Gib immer 3 konkrete, auf den Post-Inhalt abgestimmte Varianten an:
+- Variante 1: Fokus "Fokus/Arbeit" (Martin am Laptop, Notizbuch, im Büro – authentisch, ungestellt).
+- Variante 2: Fokus "Mensch/Nahbar" (Martin mit Kaffee, lachend, Blick in die Kamera, urbaner Hintergrund).
+- Variante 3: Fokus "Metaphorischer Schnappschuss" (Martin zeigt auf etwas, schaut nachdenklich aus dem Fenster, geht die Straße entlang).
+
 ## Output-Format
 
 Der Output ist reiner Markdown-Text (kein strukturiertes JSON). Zuerst der fertige Post-Text. Dann eine Trennlinie. Dann die Metadaten:
 
-```
----
 Form: [A Pflicht / B Produkt / C Founder]
 Funnel-Stufe: [Awareness / Interest / Consideration / Retention]
 Erster Kommentar: [Link, der NICHT in den Body darf, oder "keiner"]
-Foto-Idee: [ein konkreter Vorschlag fuer ein Bild von Martin, das zum Post passt]
+Foto-Auswahl (Immer Bild MIT Martin, pragmatisch & unaufwendig):
+
+Variante 1 (Fokus Arbeit): [Konkrete Beschreibung, z.B. Martin konzentriert am Laptop, Tasse Kaffee daneben]
+
+Variante 2 (Fokus Nahbar): [Konkrete Beschreibung, z.B. Martin-Selfie mit leichtem Grinsen auf dem Weg zum Kunden]
+
+Variante 3 (Fokus Emotion): [Konkrete Beschreibung, z.B. Martin von der Seite fotografiert, schaut nachdenklich aus dem Fenster]
 Zahl-Quelle: [Stufe 1 Kundendaten / Stufe 2 Rechner / Stufe 3 extern / keine]
 Schwaeche-Flag: [nur bei Form B ohne tragende Zahl, sonst weglassen]
 Hashtags: [3 bis 6, Mischung Reichweite und Thema]
-```
