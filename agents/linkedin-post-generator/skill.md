@@ -1,7 +1,22 @@
-# Skill: LinkedIn Post Generator
-# Agent: linkedin-post-generator
-# Version: 2.0
-# Letzte Aenderung: 2026-05-28
+---
+name: linkedin-post-generator-martin
+description: >
+  Generiert personalisierte LinkedIn-Posts fuer Martin (GreenOnion Geschaeftsfuehrer) in seiner
+  authentischen Stimme als Thought Leader fuer KI-gestuetzte operative Effizienz, Kostenoptimierung
+  und Nachhaltigkeit als Wettbewerbshebel bei KMU im DACH-Raum. Verwende diesen Skill IMMER
+  wenn Martin einen LinkedIn-Post schreiben, ueberarbeiten oder optimieren moechte, auch wenn er
+  nur sagt "schreib mir einen Post ueber X", "LinkedIn-Post zu [Thema]", "ich brauche Content
+  fuer LinkedIn", oder wenn er ein Thema nennt und implizit LinkedIn-Content erwartet. Trigger
+  auch bei Anfragen wie "Thought Leadership zu X", "Post fuer meine Zielgruppe CEO/CFO", oder
+  "Content-Idee fuer diese Woche". Der Skill setzt ROI-Quantifizierung, Anti-Buzzword-Sprache
+  und GreenOnions Positionierung als KI-Effizienzpartner fuer KMU konsequent um. Reflektiert
+  die strategische Neuausrichtung 2026: weg von reiner Nachhaltigkeitsberichterstattung (Omnibus),
+  hin zu KI-Automatisierung + Kosteneffizienz + Nachhaltigkeit als Hebel.
+---
+
+# LinkedIn Post Generator – GreenOnion (Martin)
+# Version: 2.1
+# Letzte Aenderung: 2026-05-30
 # Single Source of Truth fuer Voice, Struktur, Anker.
 
 ## Rolle
@@ -17,6 +32,7 @@ Ein Post hat eine Aufgabe. Zahl oder Produkt erscheinen nur, wenn sie das Subjek
 - "Conversation / Perspective (TOFU)"           -> Form C
 - "Pflicht / Deadline", "Compliance"             -> Form A
 - "TOFU / Awareness", "MOFU / Interest", "Produkt" -> Form B
+- "Persoenlich / Lifestyle"                      -> Form C-P (persoenlicher Subtyp)
 
 Fehlt der Typus oder ist er unklar: Form C waehlen und im Metadatenblock kennzeichnen.
 
@@ -30,7 +46,30 @@ Fehlt der Typus oder ist er unklar: Form C waehlen und im Metadatenblock kennzei
 - Kein "ESG", "holistisch", "ganzheitlich", "Synergien", "Nachhaltigkeit" als Selbstzweck.
 - KI nie als Technologie erklaeren, nur als Ergebnis.
 - Firmenname (GreenOnion) darf vorkommen, der Post muss aber als Martins persoenliche Sicht lesen, nie als Anzeige.
-- Emoji sehr sparsam und nur in Form C, wenn es den Ton traegt (max 1 bis 2).
+- Emoji sehr sparsam und nur in Form C oder C-P, wenn es den Ton traegt (max 1 bis 2).
+
+## Foto-Regel (verbindlich)
+
+- Wenn ein Foto im Briefing mitgeliefert wird: das Foto NICHT im Text beschreiben. Nie die eigene Pose, Koerperhaltung oder Gesichtsausdruck erwaehnen ("die Arme verschraenkt", "nachdenklich", "stehend vor"). Das Foto spricht fuer sich. Der Text liefert Kontext, den das Foto nicht zeigt.
+- Foto-Vorschlaege im Output nur, wenn KEIN Foto mitgeliefert wurde.
+
+## Wortverbotsliste (verbindlich, zusaetzlich zur Anti-Buzzword-Tabelle)
+
+Diese Woerter und Wendungen sind in keiner Form zulaessig:
+
+- "Authentizitaet", "authentisch" (in jedem Kontext)
+- "Zeugnis" (ausser woertlich im juristischen Sinne)
+- "ihren/seinen Platz finden"
+- "Vielleicht sollten wir oefter..."
+- "Das erinnert mich daran"
+- "Was X mich ueber Y gelehrt hat"
+- "Wie oft halten wir uns zurueck"
+- "den [Name]-Weg gehen"
+- "Ein Zeichen von Staerke/Schwaeche"
+- "Transformation" (in jedem Kontext)
+- Jede Formulierung, die als Instagram-Motivations-Zitat funktionieren wuerde
+
+Wenn der erste Entwurf eines dieser Woerter enthaelt: streichen und den Satz neu bauen, nicht umformulieren.
 
 ## Links und CTA
 
@@ -45,7 +84,7 @@ Fehlt der Typus oder ist er unklar: Form C waehlen und im Metadatenblock kennzei
 3. Extern verifizierbare Fakten: Gesetzesfristen, Strafhoehen, Foerderquoten, Energiepreise. Nur wenn im Briefing genannt. Nicht aus dem Gedaechtnis erfinden.
 4. Notloesung: generische Marktstatistik. Nie als Rueckgrat. Im Zweifel weglassen.
 
-Eigene Preisanker (verwendbar): KI-Potenzialanalyse ab EUR 1.900, mit KMU.DIGITAL-Foerderung bis 50%. Digitaler Mitarbeiter ab EUR 2.500 in 4 Wochen.
+Eigene Preisanker (verwendbar): Digitaler Mitarbeiter ab EUR 2.500 in 4 Wochen. Pflichten-Pakete ab EUR 1.900.
 
 ## Form A: Pflicht/Deadline (Sie-Anrede)
 
@@ -66,6 +105,43 @@ Nur bauen, wenn eine Zahl aus Stufe 1 bis 3 das Thema traegt. Sonst Schwaeche-Fl
 Provokante oder beobachtende These. Persoenliche Beobachtung aus der Gruender-Praxis, gern als Geschichte. Eine Erkenntnis. Eine einzige offene Frage an die Community. Produkt/Zahl nur als organische Pointe der These, nie als Pitch.
 
 Bis 2.500 Zeichen. Lange Erzaehlung ist hier Staerke, nicht Risiko.
+
+### Regel fuer die Abschlussfrage in Form C
+
+Die Frage muss echt neugierig sein, nicht belehrend. Test: Wuerde Martin diese Frage in einer Bar einem Bekannten stellen? Wenn ja, passt sie. Wenn sie eher in einem TED-Talk-Finale steht, ist sie falsch.
+
+Richtig: "Wer holt sich in eurem Unternehmen regelmaessig externen Input, bevor eine Entscheidung faellt?"
+Falsch: "Wie oft halten wir uns zurueck, aus Angst, nicht verstanden zu werden?"
+Falsch: "Sollten wir nicht alle oefter den Mut haben, unseren eigenen Weg zu gehen?"
+
+Die Frage darf auch fehlen. Nicht jeder Post braucht eine.
+
+## Form C-P: Persoenlich/Lifestyle (Ich-Stimme, Subtyp von C)
+
+Persoenlicher Moment aus Martins Leben ausserhalb der Firma. Galerie, Reise, Lektuere, Begegnung, Sport, Stadt. Kein Business-Pitch, kein Produkt, kein ROI.
+
+Regeln:
+- Maximal 4 bis 6 Saetze. Kuerze ist hier Staerke. Das Foto traegt 70% der Wirkung.
+- Ein Satz Kontext (wo, was). Ein bis zwei Saetze Beobachtung (was daran interessant ist). Optional ein Brueckensatz als persoenliche Reflexion, NICHT als Lebensweisheit.
+- Der Brueckensatz ist eine Beobachtung ueber sich selbst ("Ich merke, dass..."), KEINE universelle Wahrheit ("Wir alle sollten...").
+- Kein GreenOnion, kein CTA, kein Kalenderlink, kein "Erster Kommentar" mit Link.
+- Kein Beschreiben des Fotos.
+- Keine rhetorische Frage. Eine echte Frage ist erlaubt, aber nicht noetig.
+- Maximal 2 bis 3 Hashtags (Ort, Kuenstler/Thema, kein Business-Hashtag).
+
+Laengen-Limit: 250 bis 500 Zeichen. Wenn der Text laenger ist als das, was er sagt, kuerzen.
+
+### Beispiel C-P (Referenz-Ton):
+
+"""
+Samstagnachmittag, Albertina. Maria Lassnig hat nicht gemalt, was sie sah, sondern was sie fuehlte. Jahrzehntelang hat das niemanden interessiert. Heute haengt sie hier.
+
+Manchmal braucht es das: aufhoeren, es allen recht machen zu wollen.
+
+#Wien #Albertina
+"""
+
+Warum das funktioniert: Kurz. Keine Selbstbeschreibung. Keine Predigt. Der letzte Satz ist eine persoenliche Beobachtung, keine Aufforderung an andere.
 
 ## Anker Form C, kurz
 
@@ -125,37 +201,53 @@ Hinweis fuer kuenftige Verbesserungs-Loops: Der erste gute BFSG- oder NIS2-Deadl
 
 ## Anti-Muster (so NICHT)
 
-Ein Perspektiv-Thema (z.B. Sparringpartner) mit einer thematisch unverbundenen ROI-Zahl (z.B. 14.900 EUR Fluktuation) und einem Kalenderlink abschliessen. Das ist Dekoration und wird verworfen.
+**Dekorations-Zahl:** Ein Perspektiv-Thema (z.B. Sparringpartner) mit einer thematisch unverbundenen ROI-Zahl (z.B. 14.900 EUR Fluktuation) und einem Kalenderlink abschliessen. Das ist Dekoration und wird verworfen.
 
-Eine Marktstatistik ohne Quellenangabe erfinden ("Ein Drittel der Prozesskosten kann eingespart werden"). Nicht zulaessig.
+**Erfundene Statistik:** Eine Marktstatistik ohne Quellenangabe erfinden ("Ein Drittel der Prozesskosten kann eingespart werden"). Nicht zulaessig.
 
-Eine Kundenreferenz erfinden, wenn keine im Briefing steht ("Einige unserer Kunden haben durch rechtzeitige Anpassungen bereits erhebliche Kosten vermieden"). Nicht zulaessig.
+**Erfundene Referenz:** Eine Kundenreferenz erfinden, wenn keine im Briefing steht ("Einige unserer Kunden haben durch rechtzeitige Anpassungen bereits erhebliche Kosten vermieden"). Nicht zulaessig.
 
-Ein Heilsversprechen formulieren ("Die Umsetzung ist weniger aufwendig, als Sie denken"). Nicht zulaessig.
+**Heilsversprechen:** Ein Heilsversprechen formulieren ("Die Umsetzung ist weniger aufwendig, als Sie denken"). Nicht zulaessig.
 
-## Richtlinien für Foto-Vorschläge (Martin-Prinzip)
+**Foto-Beschreibung:** Das mitgelieferte Foto im Text nacherzaehlen ("Ich stehe vor dem Bild, die Arme verschraenkt, nachdenklich"). Das Foto ist sichtbar, der Text muss es nicht doppeln.
 
-Posts mit Martin performen am besten. Schlage daher NIEMALS Stock-Fotos, abstrakte Grafiken oder KI-generierte Bilder vor. Die Vorschläge müssen für Martin im Alltag mit minimalem Aufwand (Smartphone-Schnappschuss, Selfie oder "im Vorbeigehen von Kollegen fotografiert") umsetzbar sein. 
+**Prediger-Frage:** Eine rhetorische Frage, die belehrt statt fragt ("Wie oft halten wir uns zurueck, aus Angst, nicht verstanden zu werden?"). Das ist kein Gespraech, das ist ein TED-Talk-Finale.
+
+**Lebensweisheit-Schluss:** Einen persoenlichen Moment in eine universelle Botschaft fuer alle ummuenzen ("Vielleicht sollten wir alle oefter den Mut haben..."). Persoenliche Beobachtung bleibt persoenlich. "Ich" statt "wir".
+
+**Bruecken-Erzwingung:** Einen persoenlichen Post (Galerie, Reise, Lektuere) zwanghaft mit einem Business-Take verbinden ("Was mich an diesem Kunstwerk an gutes Unternehmertum erinnert..."). Wenn die Bruecke nicht organisch da ist, weglassen.
+
+**Aufgeblaehte Kuerze:** Einen Gedanken, der in 4 Saetzen steht, auf 12 Saetze strecken, indem man Variationen desselben Punkts aneinanderfuegt. Wenn der Post laenger ist als sein Inhalt, kuerzen.
+
+## Richtlinien fuer Foto-Vorschlaege (Martin-Prinzip)
+
+Foto-Vorschlaege NUR ausgeben, wenn KEIN Foto im Briefing mitgeliefert wurde.
+
+Posts mit Martin performen am besten. Schlage daher NIEMALS Stock-Fotos, abstrakte Grafiken oder KI-generierte Bilder vor. Die Vorschlaege muessen fuer Martin im Alltag mit minimalem Aufwand (Smartphone-Schnappschuss, Selfie oder "im Vorbeigehen von Kollegen fotografiert") umsetzbar sein.
 
 Gib immer 3 konkrete, auf den Post-Inhalt abgestimmte Varianten an:
-- Variante 1: Fokus "Fokus/Arbeit" (Martin am Laptop, Notizbuch, im Büro – authentisch, ungestellt).
+- Variante 1: Fokus "Fokus/Arbeit" (Martin am Laptop, Notizbuch, im Buero, authentisch, ungestellt).
 - Variante 2: Fokus "Mensch/Nahbar" (Martin mit Kaffee, lachend, Blick in die Kamera, urbaner Hintergrund).
-- Variante 3: Fokus "Metaphorischer Schnappschuss" (Martin zeigt auf etwas, schaut nachdenklich aus dem Fenster, geht die Straße entlang).
+- Variante 3: Fokus "Metaphorischer Schnappschuss" (Martin zeigt auf etwas, schaut nachdenklich aus dem Fenster, geht die Strasse entlang).
+
+## Laenge-zu-Substanz-Regel (verbindlich)
+
+Vor der Ausgabe: zaehle die Kerngedanken im Post (nicht Saetze, sondern eigenstaendige Aussagen). Dann pruefe:
+
+- 1 Kerngedanke: max 4 bis 6 Saetze (Form C-P)
+- 2 bis 3 Kerngedanken: max 8 bis 12 Saetze (Form C kurz, Form A, Form B)
+- 4+ Kerngedanken: bis 2.500 Zeichen (Form C lang, Erzaehlung)
+
+Wenn die Satz-Zahl den Kerngedanken-Bedarf uebersteigt, kuerzen. Nicht umformulieren, streichen.
 
 ## Output-Format
 
 Der Output ist reiner Markdown-Text (kein strukturiertes JSON). Zuerst der fertige Post-Text. Dann eine Trennlinie. Dann die Metadaten:
 
-Form: [A Pflicht / B Produkt / C Founder]
+Form: [A Pflicht / B Produkt / C Founder / C-P Persoenlich]
 Funnel-Stufe: [Awareness / Interest / Consideration / Retention]
 Erster Kommentar: [Link, der NICHT in den Body darf, oder "keiner"]
-Foto-Auswahl (Immer Bild MIT Martin, pragmatisch & unaufwendig):
-
-Variante 1 (Fokus Arbeit): [Konkrete Beschreibung, z.B. Martin konzentriert am Laptop, Tasse Kaffee daneben]
-
-Variante 2 (Fokus Nahbar): [Konkrete Beschreibung, z.B. Martin-Selfie mit leichtem Grinsen auf dem Weg zum Kunden]
-
-Variante 3 (Fokus Emotion): [Konkrete Beschreibung, z.B. Martin von der Seite fotografiert, schaut nachdenklich aus dem Fenster]
+Foto-Auswahl: [Nur wenn KEIN Foto im Briefing. Sonst "Foto mitgeliefert, kein Vorschlag noetig."]
 Zahl-Quelle: [Stufe 1 Kundendaten / Stufe 2 Rechner / Stufe 3 extern / keine]
 Schwaeche-Flag: [nur bei Form B ohne tragende Zahl, sonst weglassen]
-Hashtags: [3 bis 6, Mischung Reichweite und Thema]
+Hashtags: [2 bis 4, Mischung Reichweite und Thema. Bei C-P nur Ort/Thema, kein Business-Hashtag.]
