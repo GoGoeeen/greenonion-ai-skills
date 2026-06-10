@@ -89,11 +89,6 @@ Variante A: [GreenOnion-Produktname] für [konkreten Anwendungsfall] | Potenzial
 Variante B: [GreenOnion-Produktname] falls [Bedingung] | Potenzial: [gering/mittel/hoch]
 [Optional Variante C: [GreenOnion-Produktname] falls [Bedingung] | Potenzial: [gering/mittel/hoch]]
 
-GESCHÄTZTE PROJEKTGRÖSSE
-Einstieg: [GreenOnion-Produktname] | [EUR-Range aus dem Produktportfolio oben]
-Folgepotenzial: [GreenOnion-Produktname] | [EUR-Range]
-Förderbarkeit: [Für AT: "KMU.DIGITAL bis 50% möglich" / Für CH: "Kantonale Förderung separat prüfen" / Sonst: "zu prüfen"]
-
 TÜRÖFFNER-SATZ
 "[Ein beobachtetes Problem als These formuliert. Klingt wie eine Branchenbeobachtung, nicht wie ein Kompliment. Endet mit Punkt. Kein Fragezeichen. Beispiel: Bau- und Baustoffunternehmen mit eigener Aufbereitung und Transportlogik sehen oft erst verspätet, welche Energie- und Materialströme ihre Marge belasten. Genau dort entstehen die größten wirtschaftlichen Hebel.]"
 
