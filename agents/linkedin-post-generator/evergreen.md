@@ -1,7 +1,6 @@
 # Evergreen: LinkedIn Post Generator
-# Version: 2.0
-# Status: Konsolidiert in skill.md
 
-Brand-Voice, Stilregeln und Anker sind ab Version 2.0 vollstaendig in skill.md integriert. Diese Datei ist absichtlich minimal, um den Workflow nicht zu brechen (Get_GitHub_Evergreen erwartet eine ladbare Datei).
+# Version: 04.09.2026
+# Status: Vollständig in skill.md konsolidiert
 
-Bei kuenftigen Refactorings kann diese Datei wegfallen, sobald der Workflow `Get_GitHub_Evergreen` als optional behandelt (Continue On Fail = true im n8n-Knoten).
+Die verbindliche Positionierung, Formate, Ton- und Zahlenregeln sowie die Feedback-Schleife stehen vollständig in `skill.md`. Diese Datei bleibt nur bestehen, damit der Workflow den Evergreen-Abruf weiterhin zuverlässig ausführen kann.
